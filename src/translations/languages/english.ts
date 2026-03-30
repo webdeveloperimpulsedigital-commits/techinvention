@@ -154,7 +154,7 @@ export const english = {
             subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         vision: {
-            title: "Our Vision",
+            title: "Our mission",
             headline: "Shaping the {future} of Global Health",
             future: "Future",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
