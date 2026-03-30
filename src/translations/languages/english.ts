@@ -160,7 +160,7 @@ export const english = {
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         mission: {
-            title: "Our Mission",
+            title: "Our Missi",
             headline: "Bridging the {equityGap} in Biotech",
             equityGap: "Equity Gap",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
