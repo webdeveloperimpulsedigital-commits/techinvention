@@ -4,8 +4,8 @@ import ScrollReveal from '../../../../components/Common/ScrollReveal';
 import { SplitTitle } from '../../../../components/Common/SplitTitle';
 import { motion } from 'framer-motion';
 
-// Using the generated CEO portrait and another image for the second profile
-import ceoPortrait from '/C:/Users/AAA RENTAL LLP/.gemini/antigravity/brain/152e41d4-d80f-41ac-9bbc-a95afd216297/ceo_portrait_techinvention_1772909834784.png';
+// Using the local CEO portrait and another image for the second profile
+import ceoPortrait from '../../../../assets/images/ceo/syed_ahmed.jpg';
 import elenaPortrait from '../../../../assets/images/testimonial_1.png';
 import logoDNA from '../../../../assets/images/TechInvention Logo (DNA).png';
 
