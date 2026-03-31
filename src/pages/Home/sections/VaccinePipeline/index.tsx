@@ -4,7 +4,7 @@ import ScrollReveal from '../../../../components/Common/ScrollReveal';
 import TextReveal from '../../../../components/Common/TextReveal';
 import { SplitTitle } from '../../../../components/Common/SplitTitle';
 import { motion } from 'framer-motion';
-import DNAHelixTransition from '../../../../components/DNAHelixTransition';
+import logoDNA from '../../../../assets/images/TechInvention Logo (DNA).png';
 
 const VialIcon = ({ color = "currentColor", className = "" }) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke={color} strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -37,19 +37,39 @@ const VaccinePipeline = () => {
 
     return (
         <section id="vaccine-pipeline" className="relative py-24 md:py-32 bg-white">
-            <DNAHelixTransition align="right" className="top-[-100px]" />
-
             <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-                <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-8">
                     <div className="max-w-3xl">
                         <ScrollReveal direction="up">
-                            <span className="text-[11px] font-medium tracking-[0.4em] text-brand-primary mb-4 block">
+                            <span className="text-[11px] font-medium tracking-[0.4em] text-brand-primary mb-4 block uppercase">
                                 {t('vaccinePipeline.tag') || "R&D INNOVATION"}
                             </span>
                         </ScrollReveal>
-                        <h2 className="text-4xl md:text-5xl font-medium tracking-tight tracking-wide mb-6">
+                        <h2 className="text-4xl md:text-5xl font-medium tracking-wide mb-6">
                             <SplitTitle title={t('vaccinePipeline.title').replace('{pipeline}', t('vaccinePipeline.pipeline'))} />
                         </h2>
+                    </div>
+
+                    {/* Animated Inline Logo aligned with title */}
+                    <div className="hidden md:flex flex-shrink-0 justify-end w-24 sm:w-28 lg:w-32 mr-8 lg:mr-16">
+                        <motion.img 
+                            src={logoDNA}
+                            alt="TechInvention Logo"
+                            className="w-full h-auto object-contain drop-shadow-[0_15px_25px_rgba(0,0,0,0.1)] mix-blend-multiply"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true, margin: "100px" }}
+                            animate={{ 
+                                y: [-15, 15, -15],
+                                rotate: [-4, 4, -4]
+                            }}
+                            transition={{ 
+                                opacity: { duration: 1.2, ease: "easeOut" },
+                                scale: { duration: 1.2, ease: "easeOut" },
+                                y: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+                                rotate: { duration: 7, repeat: Infinity, ease: "easeInOut" }
+                            }}
+                        />
                     </div>
                 </div>
 

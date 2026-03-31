@@ -390,6 +390,18 @@ export const spanish = {
             { name: "Vacuna contra la Hepatitis B", progress: 55, color: "#F59E0B" }
         ]
     },
+    journeyPipeline: {
+        tag: "Innovaciones en I+D",
+        title1: "El Viaje de una ",
+        title2: "Vacuna",
+        phases: ["FASE 1", "FASE 2", "FASE 3", "FASE 4"],
+        boxes: [
+            { title: "Lorem Ipsum", desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat." },
+            { title: "Lorem Ipsum", desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat." },
+            { title: "Lorem Ipsum", desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat." },
+            { title: "Lorem Ipsum", desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat." }
+        ]
+    },
     membership: {
         tag: "Nuestra Red",
         title: "Biotech Global {membership}",

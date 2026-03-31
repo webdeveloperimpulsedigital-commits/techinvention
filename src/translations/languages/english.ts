@@ -416,6 +416,18 @@ export const english = {
             { name: "Hepatitis B Vaccine", progress: 55, color: "#F59E0B" }
         ]
     },
+    journeyPipeline: {
+        tag: "R&D Innovations",
+        title1: "The Journey of a ",
+        title2: "Vaccine",
+        phases: ["PHASE 1", "PHASE 2", "PHASE 3", "PHASE 4"],
+        boxes: [
+            { title: "Lorem Ipsum", desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam." },
+            { title: "Lorem Ipsum", desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam." },
+            { title: "Lorem Ipsum", desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam." },
+            { title: "Lorem Ipsum", desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam." }
+        ]
+    },
     membership: {
         tag: "Our Network",
         title: "Global Biotech {membership}",

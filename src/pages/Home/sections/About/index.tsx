@@ -3,11 +3,11 @@ import { useLanguage } from '../../../../context/LanguageContext';
 import ScrollReveal from '../../../../components/Common/ScrollReveal';
 import { SplitTitle } from '../../../../components/Common/SplitTitle';
 import { motion } from 'framer-motion';
-import DNAHelixTransition from '../../../../components/DNAHelixTransition';
 
 // Using the generated CEO portrait and another image for the second profile
 import ceoPortrait from '/C:/Users/AAA RENTAL LLP/.gemini/antigravity/brain/152e41d4-d80f-41ac-9bbc-a95afd216297/ceo_portrait_techinvention_1772909834784.png';
 import elenaPortrait from '../../../../assets/images/testimonial_1.png';
+import logoDNA from '../../../../assets/images/TechInvention Logo (DNA).png';
 
 const About = () => {
     const { t } = useLanguage();
@@ -33,18 +33,39 @@ const About = () => {
 
     return (
         <section id="about" className="relative bg-slate-50 py-16 md:py-24 border-y border-slate-100">
-            <DNAHelixTransition />
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-                <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-                    <ScrollReveal direction="up" className="max-w-3xl w-full">
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-16 gap-8">
+                    <ScrollReveal direction="up" className="max-w-3xl">
                         <span className="text-[11px] font-medium tracking-[0.4em] text-brand-primary uppercase block mb-4">
                             {t('about.leadership.title') as string || "Our Leadership"}
                         </span>
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-medium tracking-wide mb-6 whitespace-nowrap">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-medium tracking-wide whitespace-nowrap">
                             <SplitTitle title={t('about.leadership.tagline') as string || "Lorem Ipsum"} />
                         </h2>
                     </ScrollReveal>
+
+                    {/* Animated Inline Logo aligned with title */}
+                    <div className="hidden md:flex flex-shrink-0 justify-end w-24 sm:w-28 lg:w-32 mr-8 lg:mr-16">
+                        <motion.img 
+                            src={logoDNA}
+                            alt="TechInvention Logo"
+                            className="w-full h-auto object-contain drop-shadow-[0_15px_25px_rgba(0,0,0,0.1)] mix-blend-multiply"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true, margin: "100px" }}
+                            animate={{ 
+                                y: [-15, 15, -15],
+                                rotate: [-4, 4, -4]
+                            }}
+                            transition={{ 
+                                opacity: { duration: 1.2, ease: "easeOut" },
+                                scale: { duration: 1.2, ease: "easeOut" },
+                                y: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+                                rotate: { duration: 7, repeat: Infinity, ease: "easeInOut" }
+                            }}
+                        />
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">

@@ -11,6 +11,7 @@ import GlobalProjects from './sections/GlobalProjects';
 import Testimonials from './sections/Testimonials/TestimonialsAnimated';
 import ProductSlider from './sections/ProductSlider';
 import VaccinePipeline from './sections/VaccinePipeline';
+import JourneyPipeline from './sections/JourneyPipeline';
 import Awards from './sections/Awards';
 import FAQSection from './sections/FAQ';
 import Blogs from './sections/Blogs';
@@ -28,6 +29,7 @@ const Home = () => {
             <OneHealth />
             {/* <ProductSlider /> temporrily removed by request */}
             <VaccinePipeline />
+            <JourneyPipeline />
             <Horizon />
             <Awards />
             <CaseStudy />

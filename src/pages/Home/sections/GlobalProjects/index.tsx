@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { MagicText } from '../../../../components/ui/magic-text';
 import TextReveal from '../../../../components/Common/TextReveal';
 import { SplitTitle } from '../../../../components/Common/SplitTitle';
-import DNAHelixTransition from '../../../../components/DNAHelixTransition';
+import logoDNA from '../../../../assets/images/TechInvention Logo (DNA).png';
 
 
 const GlobalProjects = () => {
@@ -15,27 +15,49 @@ const GlobalProjects = () => {
 
     return (
         <section id="global-projects" className="relative py-12 md:py-24 bg-white">
-            <DNAHelixTransition align="right" className="top-[-100px]" />
-
             <div className="max-w-[1400px] mx-auto px-6 relative z-10">
                 {/* Header Content */}
-                <div className="text-left mb-8 md:mb-16">
-                    <ScrollReveal direction="left">
-                        <span className="text-brand-primary text-[11px] font-medium  tracking-[0.4em] mb-4 block">
-                            {t('globalProjects.tag')}
-                        </span>
-                    </ScrollReveal>
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 md:mb-16 gap-8">
+                    <div className="text-left max-w-3xl">
+                        <ScrollReveal direction="left">
+                            <span className="text-brand-primary text-[11px] font-medium tracking-[0.4em] mb-4 block uppercase">
+                                {t('globalProjects.tag')}
+                            </span>
+                        </ScrollReveal>
 
-                    <div className="mt-4 mb-6">
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-medium tracking-tight tracking-wide mb-6">
-                            <SplitTitle title={t('globalProjects.title').replace('{partners}', t('globalProjects.partners'))} />
-                        </h2>
+                        <div className="mt-4 mb-6">
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-medium tracking-wide mb-6">
+                                <SplitTitle title={t('globalProjects.title').replace('{partners}', t('globalProjects.partners'))} />
+                            </h2>
+                        </div>
+
+                        <div className="max-w-2xl">
+                            <MagicText
+                                text={t('globalProjects.desc')}
+                                className="font-medium tracking-tight text-brand-content text-lg md:text-xl lg:text-[1.35rem] leading-relaxed text-left lg:text-justify"
+                            />
+                        </div>
                     </div>
 
-                    <div className="max-w-2xl">
-                        <MagicText
-                            text={t('globalProjects.desc')}
-                            className="font-medium tracking-tight text-brand-content text-lg md:text-xl lg:text-[1.35rem] leading-relaxed text-justify"
+                    {/* Animated Inline Logo aligned with title */}
+                    <div className="hidden md:flex flex-shrink-0 justify-end w-24 sm:w-28 lg:w-32 mr-8 lg:mr-16">
+                        <motion.img 
+                            src={logoDNA}
+                            alt="TechInvention Logo"
+                            className="w-full h-auto object-contain drop-shadow-[0_15px_25px_rgba(0,0,0,0.1)] mix-blend-multiply"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true, margin: "100px" }}
+                            animate={{ 
+                                y: [-15, 15, -15],
+                                rotate: [-4, 4, -4]
+                            }}
+                            transition={{ 
+                                opacity: { duration: 1.2, ease: "easeOut" },
+                                scale: { duration: 1.2, ease: "easeOut" },
+                                y: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+                                rotate: { duration: 7, repeat: Infinity, ease: "easeInOut" }
+                            }}
                         />
                     </div>
                 </div>
