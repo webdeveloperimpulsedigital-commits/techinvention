@@ -15,7 +15,7 @@ const Blogs = () => {
     const { t } = useLanguage();
 
     return (
-        <section className="relative w-full py-20 md:py-32 bg-white">
+        <section className="relative w-full py-20 md:py-32 bg-brand-primary/5 border-t border-brand-primary/10">
             <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
                 
                 {/* Header */}
@@ -58,7 +58,7 @@ const Blogs = () => {
                                         </div>
                                     </div>
                                     
-                                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-primary transition-colors duration-300 line-clamp-3 leading-snug">
+                                    <h3 className="text-base md:text-lg font-bold text-gray-900 mb-4 group-hover:text-brand-primary transition-colors duration-300 line-clamp-3 leading-snug">
                                         {t(`blogs.items.${idx}.title`)}
                                     </h3>
                                     

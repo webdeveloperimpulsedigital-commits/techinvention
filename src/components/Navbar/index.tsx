@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logoImg from '../../assets/images/brand_logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useLanguage, Language } from '../../context/LanguageContext';
 import { Globe, ChevronDown, Menu, X, Search, Bell, ShoppingCart, User, Grid } from 'lucide-react';
 import MegaMenuContent from './MegaMenuContent';
@@ -13,6 +13,16 @@ const Navbar = () => {
     const { language, setLanguage, t } = useLanguage();
     const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
     const [openMobileMenus, setOpenMobileMenus] = useState<string[]>([]);
+    const [searchQuery, setSearchQuery] = useState('');
+    const navigate = useNavigate();
+
+    const handleSearch = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter' && searchQuery.trim()) {
+            navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+            setSearchQuery('');
+            setIsMenuOpen(false); // Close mobile menu if open
+        }
+    };
 
     const toggleMobileMenu = (item: string) => {
         setOpenMobileMenus(prev => 
@@ -202,6 +212,9 @@ const Navbar = () => {
                             </div>
                             <input 
                                 type="text" 
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                onKeyDown={handleSearch}
                                 placeholder={t('navbar.searchPlaceholder') || "Search TechInvention..."}
                                 className="w-full bg-gray-50 border border-transparent group-hover:border-gray-100 rounded-full py-2 pl-10 pr-4 text-[14px] font-medium focus:outline-none focus:ring-1 focus:ring-brand-primary focus:bg-white transition-all shadow-sm"
                             />

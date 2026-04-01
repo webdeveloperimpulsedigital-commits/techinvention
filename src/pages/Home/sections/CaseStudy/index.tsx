@@ -121,7 +121,7 @@ const CaseStudy = () => {
   };
 
   return (
-    <section className="w-full py-16 md:py-24 bg-slate-50 relative">
+    <section className="w-full py-16 md:py-24 bg-brand-primary/5 border-y border-brand-primary/10 relative">
         
 
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 relative z-10">

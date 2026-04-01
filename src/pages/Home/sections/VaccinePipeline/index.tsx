@@ -36,7 +36,7 @@ const VaccinePipeline = () => {
     if (!pipelineData.length) return null;
 
     return (
-        <section id="vaccine-pipeline" className="relative py-24 md:py-32 bg-white">
+        <section id="vaccine-pipeline" className="relative py-24 md:py-32 bg-brand-primary/5 overflow-hidden border-t border-brand-primary/10">
             <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-8">
                     <div className="max-w-3xl">

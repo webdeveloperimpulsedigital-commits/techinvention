@@ -87,7 +87,7 @@ const Stats = () => {
     const videoScale = useTransform(scrollYProgress, [0, 1], [1, 2.5]);
 
     return (
-        <section className="-mt-8 lg:-mt-12 pt-16 md:pt-24 lg:pt-32 pb-12 md:pb-24 lg:pb-32 relative bg-slate-50 z-20 rounded-t-[2rem] lg:rounded-t-[3rem] shadow-[0_-15px_40px_rgba(0,0,0,0.03)]">
+        <section className="-mt-8 lg:-mt-12 pt-16 md:pt-24 lg:pt-32 pb-12 md:pb-24 lg:pb-32 relative bg-white z-20 rounded-t-[2rem] lg:rounded-t-[3rem] shadow-[0_-15px_40px_rgba(0,0,0,0.03)]">
             {/* Background elements */}
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
             

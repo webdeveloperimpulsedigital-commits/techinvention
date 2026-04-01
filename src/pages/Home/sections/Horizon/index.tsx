@@ -10,7 +10,7 @@ const Horizon = () => {
     const { t } = useLanguage();
 
     return (
-        <section id="gcmc-innovation-bento" className="relative py-24 md:py-32 bg-slate-50 border-y border-slate-200">
+        <section id="gcmc-innovation-bento" className="relative py-24 md:py-32 bg-brand-primary/5 border-y border-brand-primary/10">
             {/* Background Texture */}
             <div className="absolute inset-0 noise-texture opacity-[0.02] mix-blend-overlay pointer-events-none" />
 
@@ -28,6 +28,7 @@ const Horizon = () => {
                                 address={t('horizon.subtitle') as string}
                                 description={t('horizon.desc') as string}
                                 imageUrl={horizonImg}
+                                link="/#"
                                 className="max-w-2xl h-[450px] lg:h-[550px]"
                             />
                         </div>
@@ -39,6 +40,7 @@ const Horizon = () => {
                                 address={t('horizon.gcmcSubtitle') as string}
                                 description={t('horizon.gcmcDesc') as string}
                                 imageUrl={gcmcImg}
+                                link="/#"
                                 className="max-w-2xl h-[450px] lg:h-[550px]"
                             />
                         </div>

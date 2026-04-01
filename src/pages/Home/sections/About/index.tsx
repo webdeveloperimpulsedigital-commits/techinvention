@@ -32,7 +32,7 @@ const About = () => {
     const displayProfiles = profiles.slice(0, 2);
 
     return (
-        <section id="about" className="relative bg-slate-50 py-16 md:py-24 border-y border-slate-100">
+        <section id="about" className="relative bg-brand-primary/5 py-16 md:py-24 border-y border-brand-primary/10">
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-16 gap-8">

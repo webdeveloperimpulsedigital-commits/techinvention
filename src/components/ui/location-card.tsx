@@ -8,6 +8,7 @@ interface LocationCardProps {
   address: string;
   description?: string;
   imageUrl: string;
+  link?: string;
   directionsUrl?: string; // keeping just in case they use it later but unused here
   className?: string;
 }
@@ -18,6 +19,7 @@ export const LocationCard = ({
   address,
   description,
   imageUrl,
+  link,
   className,
 }: LocationCardProps) => {
   // Framer Motion hooks for creating the 3D tilt effect
@@ -99,6 +101,25 @@ export const LocationCard = ({
              <p className="text-sm md:text-base text-white/95 leading-relaxed">
                {description}
              </p>
+             {link && (
+                 <a href={link} className="block mt-6 w-fit relative z-50">
+                    <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="group/btn relative flex items-center gap-4 bg-brand-primary text-white px-7 py-3 rounded-full text-sm font-medium tracking-tight transition-all duration-300 hover:bg-brand-primary/90 hover:shadow-xl overflow-hidden w-fit shadow-xl border border-white/10"
+                    >
+                        <span className="relative z-10 tracking-widest text-[10px] uppercase">
+                            Know More
+                        </span>
+                        <div className="relative overflow-hidden w-4 h-4 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover/btn:translate-x-full"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="absolute -left-full transition-transform duration-300 group-hover/btn:translate-x-full"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                        </div>
+                        {/* Shine Effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000" />
+                    </motion.div>
+                 </a>
+             )}
           </div>
         </div>
       </div>

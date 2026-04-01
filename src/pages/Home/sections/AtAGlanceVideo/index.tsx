@@ -5,7 +5,7 @@ import { useLanguage } from '../../../../context/LanguageContext';
 const AtAGlanceVideo = () => {
     const { t } = useLanguage();
     return (
-        <section className="relative w-full py-16 md:py-24 bg-white">
+        <section className="relative w-full py-16 md:py-24 bg-brand-primary/5 border-y border-brand-primary/10">
             <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 mb-12">
                 <ScrollReveal direction="up" delay={0.2} className="text-center">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-brand-primary tracking-tighter mb-4">

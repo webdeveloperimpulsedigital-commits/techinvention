@@ -14,6 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 import MembershipPage from './pages/Membership';
 import CertificationPage from './pages/Certification';
+import SearchPage from './pages/Search';
 
 function AppContent() {
     const { pathname } = useLocation();
@@ -70,6 +71,7 @@ function AppContent() {
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/membership" element={<MembershipPage />} />
                     <Route path="/certification" element={<CertificationPage />} />
+                    <Route path="/search" element={<SearchPage />} />
                 </Routes>
                 <Footer />
             </div>

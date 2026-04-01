@@ -30,7 +30,7 @@ const TestimonialsAnimated = () => {
     if (!formattedTestimonials.length) return null;
 
     return (
-        <section id="testimonials" className="relative py-12 md:py-32 bg-slate-50/50 border-t border-black/5">
+        <section id="testimonials" className="relative py-12 md:py-32 bg-brand-primary/5 border-y border-brand-primary/10">
             {/* Background Decorative Elements */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-brand-primary/[0.03] to-transparent pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-1/3 h-full bg-gradient-to-r from-brand-primary/[0.03] to-transparent pointer-events-none" />
