@@ -291,7 +291,7 @@ export const english = {
         ]
     },
     horizon: {
-        title: "HORIZON",
+        title: "HORIZON1",
         subtitle: "High-impact One-health Research & Innovation ZONE",
         desc: "A GMP-like facility thoughtfully designed with innovative and sustainable concepts, aimed at enabling efficient and environmentally responsible production of preclinical vaccine batches.",
         gcmcTitle: "GCMC",
