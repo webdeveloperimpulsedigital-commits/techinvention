@@ -4,11 +4,14 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch: {}
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # 🔥 fixes your 403 error
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -17,12 +20,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Vite project
+      - name: Build project
         run: npm run build
 
       - name: Deploy to hostinger-deploy branch
@@ -30,5 +32,3 @@ jobs:
         with:
           branch: hostinger-deploy
           folder: dist
-          clean: true
-          commit-message: "Deploy: ${{ github.sha }}"
