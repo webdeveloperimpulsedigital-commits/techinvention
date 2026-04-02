@@ -72,14 +72,6 @@ const FloatingDNA: React.FC = () => {
             <motion.div 
                 className="relative"
                 style={{ rotate: rotation }}
-                animate={{ 
-                    rotateY: 360,
-                    y: [0, -10, 0],
-                }}
-                transition={{
-                    rotateY: { duration: 15, repeat: Infinity, ease: "linear" },
-                    y: { duration: 5, repeat: Infinity, ease: "easeInOut" }
-                }}
             >
                 <img 
                     src={dnaLogo} 

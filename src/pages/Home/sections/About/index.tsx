@@ -54,15 +54,9 @@ const About = () => {
                             initial={{ opacity: 0, scale: 0.8 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true, margin: "100px" }}
-                            animate={{ 
-                                y: [-15, 15, -15],
-                                rotate: [-4, 4, -4]
-                            }}
                             transition={{ 
                                 opacity: { duration: 1.2, ease: "easeOut" },
-                                scale: { duration: 1.2, ease: "easeOut" },
-                                y: { duration: 6, repeat: Infinity, ease: "easeInOut" },
-                                rotate: { duration: 7, repeat: Infinity, ease: "easeInOut" }
+                                scale: { duration: 1.2, ease: "easeOut" }
                             }}
                         />
                     </div>

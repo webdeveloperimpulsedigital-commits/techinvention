@@ -183,7 +183,7 @@ export const english = {
         },
         leadership: {
             title: "Our Leadership",
-            tagline: "Our Team",
+            tagline: "Lorem ipsum",
             profiles: [
                 {
                     name: "Syed S. Ahmed",

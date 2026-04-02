@@ -7,23 +7,13 @@ interface SectionDNAProps {
     opacity?: number;
     rotate?: number;
     scale?: number;
-    animate?: any;
-    transition?: any;
 }
 
 const SectionDNA: React.FC<SectionDNAProps> = ({ 
     className = "", 
     opacity = 0.08, 
     rotate = 0, 
-    scale = 1,
-    animate = { 
-        rotateY: 360,
-        translateY: [0, -20, 0]
-    },
-    transition = { 
-        rotateY: { duration: 15, repeat: Infinity, ease: "linear" },
-        translateY: { duration: 6, repeat: Infinity, ease: "easeInOut" }
-    }
+    scale = 1
 }) => {
     return (
         <motion.div
@@ -38,8 +28,6 @@ const SectionDNA: React.FC<SectionDNAProps> = ({
                 alt=""
                 className="w-full h-auto drop-shadow-2xl brightness-110 contrast-125 mix-blend-screen"
                 style={{ rotate }}
-                animate={animate}
-                transition={transition}
             />
         </motion.div>
     );

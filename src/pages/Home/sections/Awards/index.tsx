@@ -1,15 +1,31 @@
 import React from 'react';
 import { useLanguage } from '../../../../context/LanguageContext';
 import ScrollReveal from '../../../../components/Common/ScrollReveal';
-import { motion } from 'framer-motion';
 import awardImage from '../../../../assets/images/Award+Section-Top100Tech+24.webp';
-
 
 const Awards = () => {
     const { t } = useLanguage();
 
     return (
-        <section id="awards" className="relative py-16 md:py-24 bg-white border-t border-slate-100">
+        <section id="awards" className="relative py-16 md:py-24 bg-white border-t border-slate-100 overflow-hidden">
+            
+            {/* Inline styles for seamless marquee and pause-on-hover */}
+            <style>{`
+                @keyframes marqueeScroll {
+                    0% { transform: translateX(0%); }
+                    100% { transform: translateX(-50%); }
+                }
+                .marquee-content {
+                    display: flex;
+                    width: max-content;
+                    /* Adjust 30s to make it slower/faster */
+                    animation: marqueeScroll 30s linear infinite; 
+                }
+                /* This ensures the slide stops exactly where it is when hovered, without restarting! */
+                .marquee-content:hover {
+                    animation-play-state: paused;
+                }
+            `}</style>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10 w-full mb-12">
                 <ScrollReveal direction="up">
@@ -27,31 +43,24 @@ const Awards = () => {
             </div>
 
             {/* Infinite Looping Slider */}
-            <div className="w-full relative py-8 bg-transparent flex flex-col items-center">
-                <div className="w-full overflow-hidden flex">
-                    <motion.div
-                        className="flex w-max"
-                        animate={{ x: ["0%", "-50%"] }}
-                        transition={{
-                            repeat: Infinity,
-                            ease: "linear",
-                            duration: 20, // Faster scroll speed
-                        }}
-                    >
+            <div className="w-full relative py-8 bg-transparent">
+                <div className="w-full overflow-hidden">
+                    <div className="marquee-content">
                         {/* 
-                          Duplicating the image 24 times to ensure a seamless continuous loop 
-                          that is wider than any modern screen width. Padding is reduced to pull them together tightly.
+                          Duplicating the images to ensure a seamless continuous loop 
+                          that is wider than any modern screen width.
+                          By scrolling exactly -50%, it seamlessly jumps back to 0%.
                         */}
                         {[...Array(24)].map((_, idx) => (
-                            <div key={idx} className="flex-shrink-0 px-2 flex items-center justify-center">
+                            <div key={idx} className="flex-shrink-0 px-6 md:px-10 flex items-center justify-center cursor-pointer">
                                 <img 
                                     src={awardImage} 
-                                    alt="Global Health Awards and Recognition" 
-                                    className="max-h-[160px] md:max-h-[220px] lg:max-h-[280px] w-auto object-contain transition-opacity duration-300 pointer-events-none opacity-95 hover:opacity-100"
+                                    alt={`Award ${idx + 1}`} 
+                                    className="max-h-[140px] md:max-h-[180px] lg:max-h-[220px] w-auto object-contain transition-all duration-300 opacity-90 hover:opacity-100 hover:scale-105"
                                 />
                             </div>
                         ))}
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>
