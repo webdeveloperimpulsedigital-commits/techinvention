@@ -132,7 +132,7 @@ const Footer = () => {
 
                 {/* Centered Credit at the bottom */}
                 <div className="text-center pt-6 text-[13px] 2xl:text-[14px] text-brand-gray-light font-semibold tracking-wide">
-                    <span>Powered by <a href="https://www.theimpulsedigital.com/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-content transition-colors font-semibold">Impulse Digital</a></span>
+                    <span>Powered by <a href="https://www.theimpulsedigital.com/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-content transition-colors font-semibold">Impulse Digital Pvt. Ltd.</a></span>
                 </div>
             </div>
         </footer>
