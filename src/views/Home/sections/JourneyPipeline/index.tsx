@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../../../../context/LanguageContext';
 import { motion } from 'framer-motion';
-const logoDNA = "/techinvention/TechInvention-gif.gif";
+const logoDNA = "/TechInvention-gif.gif";
 
 const UserGroupIcon = ({ color, className }: { color: string, className?: string }) => (
   <svg viewBox="0 0 100 100" className={className} fill={color}>

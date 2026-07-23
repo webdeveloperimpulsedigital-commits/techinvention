@@ -8,10 +8,10 @@ export default function ClientFeedback() {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     const feedbackImages = [
-        { src: "/techinvention/feedback-4.png", alt: "Client Feedback Letter - IAVI" },
-        { src: "/techinvention/feedback-3.jpg", alt: "Client Feedback Letter - UNOPS Biosafety & Biosecurity Training" },
-        { src: "/techinvention/feedback-2.jpg", alt: "Client Feedback Letter - UNOPS Vaccine Analytics Training" },
-        { src: "/techinvention/feedback-1.jpg", alt: "Client Feedback Letter - WHO" }
+        { src: "/feedback-4.png", alt: "Client Feedback Letter - IAVI" },
+        { src: "/feedback-3.jpg", alt: "Client Feedback Letter - UNOPS Biosafety & Biosecurity Training" },
+        { src: "/feedback-2.jpg", alt: "Client Feedback Letter - UNOPS Vaccine Analytics Training" },
+        { src: "/feedback-1.jpg", alt: "Client Feedback Letter - WHO" }
     ];
 
     return (

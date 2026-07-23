@@ -7,13 +7,13 @@ import { SplitTitle } from '../../../components/Common/SplitTitle';
 const certificates = [
     {
         id: 'feedback1',
-        image: '/techinvention/application-feedback-1.jpg',
+        image: '/application-feedback-1.jpg',
         title: 'Appreciation Letter',
         issuer: 'UNOPS'
     },
     {
         id: 'feedback2',
-        image: '/techinvention/application-feedback-2.jpg',
+        image: '/application-feedback-2.jpg',
         title: 'Appreciation Letter',
         issuer: 'UNOPS'
     }

@@ -9,7 +9,7 @@ import ceoPortrait from '../../../../assets/images/leadership/syed_ahmed.jpg';
 import nazneenPortrait from '../../../../assets/images/leadership/nazneen_light_blue.jpg';
 import Stats from '../Stats';
 
-const logoDNA = "/techinvention/TechInvention-gif.gif";
+const logoDNA = "/TechInvention-gif.gif";
 
 const About = () => {
     const { t } = useLanguage();

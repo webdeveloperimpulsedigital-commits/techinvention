@@ -53,7 +53,7 @@ export default function CareersHero() {
                     {/* 2024 Badge Wrapper */}
                     <div className="w-[80px] h-[120px] sm:w-[90px] sm:h-[130px] overflow-hidden relative flex items-center justify-center">
                         <img 
-                            src="/techinvention/great-place-24.jpeg" 
+                            src="/great-place-24.jpeg" 
                             alt="Great Place to Work Certified 2024" 
                             className="max-w-none h-full w-auto object-cover absolute left-1/2 -translate-x-1/2"
                         />
@@ -62,7 +62,7 @@ export default function CareersHero() {
                     {/* 2023 Badge Wrapper */}
                     <div className="w-[80px] h-[120px] sm:w-[90px] sm:h-[130px] overflow-hidden relative flex items-center justify-center">
                         <img 
-                            src="/techinvention/great-place-23.jpeg" 
+                            src="/great-place-23.jpeg" 
                             alt="Great Place to Work Certified 2023" 
                             className="max-w-none h-full w-auto object-cover absolute left-1/2 -translate-x-1/2"
                         />

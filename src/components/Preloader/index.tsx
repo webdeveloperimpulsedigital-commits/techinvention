@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-const dnaLogo = "/techinvention/TechInvention-gif.gif";
+const dnaLogo = "/TechInvention-gif.gif";
 
 interface PreloaderProps {
     onComplete: () => void;

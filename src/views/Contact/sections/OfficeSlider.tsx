@@ -8,15 +8,15 @@ export default function OfficeSlider() {
 
     const slides = [
         {
-            src: "/techinvention/img-7.jpeg",
+            src: "/img-7.jpeg",
             name: "Techinvention Office"
         },
         {
-            src: "/techinvention/img-6.jpeg",
+            src: "/img-6.jpeg",
             name: "Workspace"
         },
         {
-            src: "/techinvention/img-5.jpeg",
+            src: "/img-5.jpeg",
             name: "Training Room"
         }
     ];

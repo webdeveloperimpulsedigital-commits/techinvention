@@ -60,7 +60,7 @@ export default function ProductsHero() {
                     className="w-full"
                 >
                     <div className="relative w-full overflow-hidden">
-                        <img src="/techinvention/manufacturing.png" 
+                        <img src="/manufacturing.png" 
                             alt="Advanced Biotech Manufacturing and Formulation Facility" 
                             className="w-full h-[500px] lg:h-[600px] object-cover"
                         />

@@ -10,28 +10,28 @@ const testimonials = [
         designation: "Admin and HR",
         experience: "9+ Years",
         quote: "Having joined TechInvention in an Admin and HR role 10 years ago, I have had the privilege of growing alongside the organisation and taking on greater responsibility, ownership and purpose over the years. It has been an inspiring and deeply fulfilling journey, and I am proud to have witnessed and contributed to TechInvention's remarkable growth and evolution.",
-        image: "/techinvention/Shahnawaz.jpg"
+        image: "/Shahnawaz.jpg"
     },
     {
         name: "Aziz Mandsaurwala",
         designation: "Senior Manager - Global BD",
         experience: "6+ Years",
         quote: "Working at TechInvention means being part of projects that connect science, strategy and real-world healthcare impact. Every assignment brings learning and growth.",
-        image: "/techinvention/Aziz.jpeg"
+        image: "/Aziz.jpeg"
     },
     {
         name: "Sarang Pathak",
         designation: "General Manager",
         experience: "9+ Years",
         quote: "Working at TechInvention has given me the opportunity to continuously learn, take on diverse responsibilities and contribute to meaningful work. The trust, exposure and support I have received here have played an important role in my professional growth and confidence.",
-        image: "/techinvention/Sarang-Pathak.jpeg"
+        image: "/Sarang-Pathak.jpeg"
     },
     {
         name: "Priya Dhawale",
         designation: "Deputy Manager - GBD",
         experience: "5+ Years",
         quote: "Completing over six years at TechInvention has been an incredibly rewarding journey. It has been inspiring to witness the company's transformation from a startup into a growing MSME with a strong global presence. Throughout this journey, I have been given the opportunity to work on diverse international business development and strategic consulting projects, collaborate with global stakeholders, and continuously expand my knowledge in the life sciences sector. The trust, support, and learning opportunities provided by the leadership and my colleagues have played a significant role in my professional growth. I look forward to being part of TechInvention's continued success and innovation.",
-        image: "/techinvention/Priya-photo.jpg"
+        image: "/Priya-photo.jpg"
     }
 ];
 

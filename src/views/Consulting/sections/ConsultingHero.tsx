@@ -44,7 +44,7 @@ export default function ConsultingHero() {
                     className="w-full"
                 >
                     <div className="relative w-full overflow-hidden">
-                        <img src="/techinvention/consulting-banner.png" 
+                        <img src="/consulting-banner.png" 
                             alt="Strategic Advisory and Tech Consulting" 
                             className="w-full h-[500px] lg:h-[600px] object-cover"
                         />

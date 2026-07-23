@@ -7,7 +7,7 @@ import { SplitTitle } from '../../../../components/Common/SplitTitle';
 import { cn } from '../../../../lib/utils';
 
 
-const logoDNA = "/techinvention/TechInvention-gif.gif";
+const logoDNA = "/TechInvention-gif.gif";
 
 interface FAQItemProps {
     question: string;

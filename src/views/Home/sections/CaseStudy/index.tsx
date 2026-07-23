@@ -9,7 +9,7 @@ import vaccineImg from '../../../../assets/images/case-study/vaccine_lab.png';
 import diagnosticImg from '../../../../assets/images/case-study/diagnostic_test.png';
 import biotechImg from '../../../../assets/images/case-study/biotech_research.png';
 
-const logoDNA = "/techinvention/TechInvention-gif.gif";
+const logoDNA = "/TechInvention-gif.gif";
 
 const FEATURES = [
   {

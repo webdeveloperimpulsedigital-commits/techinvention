@@ -4,7 +4,7 @@ import ScrollReveal from '../../../../components/Common/ScrollReveal';
 import awardImage from '../../../../assets/images/Award+Section-Top100Tech+24.webp';
 import { motion } from 'framer-motion';
 
-const logoDNA = "/techinvention/TechInvention-gif.gif";
+const logoDNA = "/TechInvention-gif.gif";
 
 const Awards = () => {
     const { t } = useLanguage();

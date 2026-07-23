@@ -34,7 +34,7 @@ const CERT_CONFIG = [
     },
     {
         id: 'esg',
-        image: '/techinvention/esg-certificate.png',
+        image: '/esg-certificate.png',
         name: 'ESG Certificate',
         year: '2024',
         info: 'We have received the Environmental, Social, and Governance (ESG) Certification from Dun & Bradstreet, as a recognition of our commitment to sustainability, social responsibility, and ethical governance. This milestone highlights our efforts to promote health equity through affordable healthcare solutions, adopt sustainable practices, and uphold transparency and compliance.'
@@ -48,7 +48,7 @@ const CERT_CONFIG = [
     },
     {
         id: 'dsir',
-        image: '/techinvention/dsir.png',
+        image: '/dsir.png',
         name: 'DSIR Certificate of Recognition',
         year: '2024',
         info: 'Our in-house R&D Unit has been recognized by the Department of Scientific and Industrial Research (DSIR), Government of India. This certification is crucial for fostering innovation, enabling access to government incentives, and strengthening our research capabilities to develop affordable vaccines, biotherapeutics, and diagnostics.'

@@ -49,7 +49,7 @@ const Stats = () => {
                                     whileHover={{ y: -4 }}
                                     className="bg-white border border-slate-200/60 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center h-full min-h-[290px]"
                                 >
-                                    <img src="/techinvention/great-place.png" alt="Great Place to Work" className="max-h-[220px] sm:max-h-[250px] w-auto object-contain" />
+                                    <img src="/great-place.png" alt="Great Place to Work" className="max-h-[220px] sm:max-h-[250px] w-auto object-contain" />
                                 </motion.div>
                             </div>
 
@@ -65,7 +65,7 @@ const Stats = () => {
                                     whileHover={{ y: -4 }}
                                     className="transition-all duration-300 flex-1 min-h-[132px] flex items-center justify-center"
                                 >
-                                    <img src="/techinvention/Certification_banner_01.png" alt="Dun & Bradstreet" className="w-full h-full object-contain" />
+                                    <img src="/Certification_banner_01.png" alt="Dun & Bradstreet" className="w-full h-full object-contain" />
                                 </motion.div>
 
                                 {/* Forbes Card */}
@@ -77,7 +77,7 @@ const Stats = () => {
                                     whileHover={{ y: -4 }}
                                     className="transition-all duration-300 flex-1 min-h-[132px] flex items-center justify-center"
                                 >
-                                    <img src="/techinvention/Certification_banner.png" alt="Forbes India DGEMS" className="w-full h-full object-contain" />
+                                    <img src="/Certification_banner.png" alt="Forbes India DGEMS" className="w-full h-full object-contain" />
                                 </motion.div>
                             </div>
 

@@ -7,11 +7,11 @@ export default function LifeAtTechInvention() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const slides = [
-        { src: "/techinvention/team-techinvention.jpg" },
-        { src: "/techinvention/image-1.jpeg" },
-        { src: "/techinvention/img-2.jpeg" },
-        { src: "/techinvention/img-3.jpeg" },
-        { src: "/techinvention/img-4.jpeg" }
+        { src: "/team-techinvention.jpg" },
+        { src: "/image-1.jpeg" },
+        { src: "/img-2.jpeg" },
+        { src: "/img-3.jpeg" },
+        { src: "/img-4.jpeg" }
     ];
 
     const handlePrev = () => {

@@ -82,9 +82,9 @@ const specializedPrograms = [
         color: '#1955A6',
         bg: 'bg-[#1955A6]/5',
         images: [
-            "/techinvention/Biosecurity-Training.jpg",
-            "/techinvention/Biosecurity-Training-1.jpg",
-            "/techinvention/Biosecurity-Training-4.jpg"
+            "/Biosecurity-Training.jpg",
+            "/Biosecurity-Training-1.jpg",
+            "/Biosecurity-Training-4.jpg"
         ]
     },
     {
@@ -94,9 +94,9 @@ const specializedPrograms = [
         color: '#5C7625',
         bg: 'bg-[#5C7625]/5',
         images: [
-            "/techinvention/Analytics-Training.jpg",
-            "/techinvention/Analytics-Training-2.jpg",
-            "/techinvention/Analytics-Training-3.jpg"
+            "/Analytics-Training.jpg",
+            "/Analytics-Training-2.jpg",
+            "/Analytics-Training-3.jpg"
         ]
     },
     {
@@ -106,9 +106,9 @@ const specializedPrograms = [
         color: '#1955A6',
         bg: 'bg-[#1955A6]/5',
         images: [
-            "/techinvention/RCB.jpg",
-            "/techinvention/RCB-1.jpg",
-            "/techinvention/RCB-2.jpg"
+            "/RCB.jpg",
+            "/RCB-1.jpg",
+            "/RCB-2.jpg"
         ]
     }
 ];

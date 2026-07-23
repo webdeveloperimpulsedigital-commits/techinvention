@@ -5,15 +5,15 @@ import { SplitTitle } from '../../../components/Common/SplitTitle';
 const grantsList = [
     {
         name: "BIRAC",
-        logo: "/techinvention/Grant-section/BIRAC.png"
+        logo: "/Grant-section/BIRAC.png"
     },
     {
         name: "TBVI",
-        logo: "/techinvention/Grant-section/TBVI-logo-2016-Klein.jpg"
+        logo: "/Grant-section/TBVI-logo-2016-Klein.jpg"
     },
     {
         name: "BactiVac",
-        logo: "/techinvention/Grant-section/bactivac.png"
+        logo: "/Grant-section/bactivac.png"
     }
 ];
 

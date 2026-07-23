@@ -4,7 +4,7 @@ import { useLanguage } from '../../../../context/LanguageContext';
 import { motion } from 'framer-motion';
 import techInventionVideo from '../../../../assets/videos/TechInvention-Video.mp4';
 
-const logoDNA = "/techinvention/TechInvention-gif.gif";
+const logoDNA = "/TechInvention-gif.gif";
 
 const AtAGlanceVideo = () => {
     const { t } = useLanguage();

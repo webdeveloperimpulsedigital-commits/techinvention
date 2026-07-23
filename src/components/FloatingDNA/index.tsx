@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
-const dnaLogo = "/techinvention/TechInvention-gif.gif";
+const dnaLogo = "/TechInvention-gif.gif";
 
 const FloatingDNA: React.FC = () => {
     const [isMobile, setIsMobile] = useState(false);

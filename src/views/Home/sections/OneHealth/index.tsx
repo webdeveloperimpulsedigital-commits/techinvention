@@ -13,7 +13,7 @@ import TextReveal from '../../../../components/Common/TextReveal';
 import { SplitTitle } from '../../../../components/Common/SplitTitle';
 import { motion } from 'framer-motion';
 
-const logoDNA = "/techinvention/TechInvention-gif.gif";
+const logoDNA = "/TechInvention-gif.gif";
 
 const OneHealth = () => {
     const { t } = useLanguage();
@@ -32,10 +32,10 @@ const OneHealth = () => {
         : fallbackSlides;
 
     const slides = [
-        { ...(finalSlidesData[3] || {}), title: finalSlidesData[3]?.title || "Commercial-Scale Manufacturing", image: "/techinvention/Commercial.jpg", tag: finalSlidesData[3]?.tag || "Manufacturing" },
-        { ...(finalSlidesData[1] || {}), title: finalSlidesData[1]?.title || "Research and Development (R&D)", image: "/techinvention/Research.jpg", tag: finalSlidesData[1]?.tag || "R&D" },
-        { ...(finalSlidesData[2] || {}), title: finalSlidesData[2]?.title || "Licensing and Access", image: "/techinvention/Licensing.jpg", tag: finalSlidesData[2]?.tag || "Licensing" },
-        { ...(finalSlidesData[0] || {}), title: finalSlidesData[0]?.title || "Strategic Advisory & Tech Consulting", image: "/techinvention/Strategic.jpg", tag: finalSlidesData[0]?.tag || "Consulting" },
+        { ...(finalSlidesData[3] || {}), title: finalSlidesData[3]?.title || "Commercial-Scale Manufacturing", image: "/Commercial.jpg", tag: finalSlidesData[3]?.tag || "Manufacturing" },
+        { ...(finalSlidesData[1] || {}), title: finalSlidesData[1]?.title || "Research and Development (R&D)", image: "/Research.jpg", tag: finalSlidesData[1]?.tag || "R&D" },
+        { ...(finalSlidesData[2] || {}), title: finalSlidesData[2]?.title || "Licensing and Access", image: "/Licensing.jpg", tag: finalSlidesData[2]?.tag || "Licensing" },
+        { ...(finalSlidesData[0] || {}), title: finalSlidesData[0]?.title || "Strategic Advisory & Tech Consulting", image: "/Strategic.jpg", tag: finalSlidesData[0]?.tag || "Consulting" },
     ];
 
     return (

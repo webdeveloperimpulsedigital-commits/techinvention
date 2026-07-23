@@ -8,38 +8,38 @@ const publications = [
     {
         name: "pcv",
         title: "Streptococcus pneumoniae serotype distribution in low- and middle-income countries of South Asia: Do we need to revisit the pneumococcal vaccine strategy?",
-        image: "/techinvention/articales/pcv.jpg",
-        pdf: "/techinvention/articales/Streptococcus-pneumoniae-serotype-distribution-in-low-and-middle-income-countries-of-South-Asia-Do-we-need-to-revisit-the-pneumococcal-vaccine-strat.pdf"
+        image: "/articales/pcv.jpg",
+        pdf: "/articales/Streptococcus-pneumoniae-serotype-distribution-in-low-and-middle-income-countries-of-South-Asia-Do-we-need-to-revisit-the-pneumococcal-vaccine-strat.pdf"
     },
     {
         name: "Overcoming-barriers",
         title: "Overcoming barriers to medical countermeasures: Strengthening global biosecurity",
-        image: "/techinvention/articales/Overcoming-barriers.jpg",
-        pdf: "/techinvention/articales/Overcoming-barriers-to-medical-countermeasures-Strengthening-global-biosecurity-1.pdf"
+        image: "/articales/Overcoming-barriers.jpg",
+        pdf: "/articales/Overcoming-barriers-to-medical-countermeasures-Strengthening-global-biosecurity-1.pdf"
     },
     {
         name: "Lancet Euvichol",
         title: "Comparison of the immunogenicity and safety of Euvichol-Plus with Shanchol in healthy Indian adults and children: an open-label, randomized, multicentre, non-inferiority, parallel-group, phase 3 trial",
-        image: "/techinvention/articales/1Lancet_Euvichol-pdf.jpg",
-        pdf: "/techinvention/articales/PIIS2772368223001166.pdf"
+        image: "/articales/1Lancet_Euvichol-pdf.jpg",
+        pdf: "/articales/PIIS2772368223001166.pdf"
     },
     {
         name: "Frontiers",
         title: "Beyond antibiotics: phage-encoded lysins against Gram-negative pathogens",
-        image: "/techinvention/articales/2forntiers-pdf.jpg",
-        pdf: "/techinvention/articales/fmicb-14-1170418.pdf"
+        image: "/articales/2forntiers-pdf.jpg",
+        pdf: "/articales/fmicb-14-1170418.pdf"
     },
     {
         name: "Taylor Capacity Building",
         title: "Capacity Building for Vaccine Manufacturing Across Developing Countries: The Way Forward",
-        image: "/techinvention/articales/3Taylor_Capacity_Building-pdf.jpg",
-        pdf: "/techinvention/articales/KHVI_18_2020529.pdf"
+        image: "/articales/3Taylor_Capacity_Building-pdf.jpg",
+        pdf: "/articales/KHVI_18_2020529.pdf"
     },
     {
         name: "Vaccine COVID-19",
         title: "COVID-19 management landscape: A need for an affordable platform to manufacture safe and efficacious biotherapeutics and prophylactics for the developing countries",
-        image: "/techinvention/articales/4Vaccine_COVID-19-pdf.jpg",
-        pdf: "/techinvention/articales/1-s2.0-S0264410X22006831-main.pdf"
+        image: "/articales/4Vaccine_COVID-19-pdf.jpg",
+        pdf: "/articales/1-s2.0-S0264410X22006831-main.pdf"
     }
 ];
 

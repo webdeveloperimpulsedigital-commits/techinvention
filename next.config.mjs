@@ -2,8 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
-  basePath: '/techinvention',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/techinvention' : undefined,
   trailingSlash: true,
   // Disable next/image static import handling to prevent conflicts with Vite-style imports
   images: {
@@ -31,19 +29,6 @@ const nextConfig = {
     return config;
   },
 
-  // Only redirect from root '/' to '/techinvention/' in development
-  ...(process.env.NODE_ENV === 'development' ? {
-    async redirects() {
-      return [
-        {
-          source: '/',
-          destination: '/techinvention/',
-          basePath: false,
-          permanent: false,
-        },
-      ];
-    }
-  } : {})
 };
 
 export default nextConfig;

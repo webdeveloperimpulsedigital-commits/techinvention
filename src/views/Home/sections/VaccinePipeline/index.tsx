@@ -4,7 +4,7 @@ import ScrollReveal from '../../../../components/Common/ScrollReveal';
 import TextReveal from '../../../../components/Common/TextReveal';
 import { SplitTitle } from '../../../../components/Common/SplitTitle';
 import { motion } from 'framer-motion';
-const logoDNA = "/techinvention/TechInvention-gif.gif";
+const logoDNA = "/TechInvention-gif.gif";
 
 import { Syringe } from 'lucide-react';
 
